@@ -29,18 +29,26 @@ html, body {
 }
 
 .service-cont{
-  padding: 20px;
+
   background-color: black;
   background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
-  padding-left: 4vw;
-  padding-right: 4vw;
-  padding-bottom: 7vw;
+  padding-left: 11vw;
+  padding-right: 11vw;
+  padding-bottom: 10vw;
+
 }
 .button-service-cont{
-  padding: 20px;
   background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
   padding-left: 4vw;
   padding-right: 4vw;
+  margin-top:-10vw;
+  z-index:10;
+  position:relative;
+  margin-bottom:0px;
+  height: 10vw;
+}
+.second-buttons{
+  padding-top: 6vw;
 }
 /* ....------------------------------------------------  Cards ----------------------------------------------------------------------- ...*/
 
@@ -54,13 +62,14 @@ html, body {
 .card{
   border: none;
   border-radius: 0px;
+  border-top: 0 !important;
 }
 .card-title{
   color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   letter-spacing: 2px;
-  font-weight: 200;
+  font-weight: 300;
   padding-top: 5px;
 }
 
@@ -117,7 +126,6 @@ html, body {
 }
 /* ....------------------------------------------------  Mobile Nav ----------------------------------------------------------------------- ...*/
 body {
-  transition: background-color .5s;
 }
 .sidenav {
   height: 100%;
@@ -154,7 +162,8 @@ body {
 }
 
 #main {
-  transition: margin-left .5s;
+  transition: opacity: .1; .5s;
+
 
 }
 .cursor-ham{
@@ -167,7 +176,11 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
+/* ....------------------------------------------------  number animation ----------------------------------------------------------------------- ...*/
 
+#nbr{
+
+}
 
 /* ....------------------------------------------------  Image ----------------------------------------------------------------------- ...*/
 
@@ -183,8 +196,19 @@ body {
   padding-bottom: 3vw;
 }
 .nav-logo{
-  width: 20px;
+  width: 30px;
+  float: left;
+  margin-left: 6vw;
+}
+.fonts{
   float: right;
+  margin-right: -23vw;
+}
+.text-left{
+  margin-left: 2vw;
+}
+.fonts-sm{
+  margin-right: 2vw;
 }
 /* ....------------------------------------------------Image Grid ----------------------------------------------------------------------- ...*/
 
@@ -232,15 +256,18 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  padding-top: 10vw;
 }
 
 
 .background-image-otherservices{
   background-color: green;
-  padding-top: 5vw;
-  padding-bottom: 7vw;
+  padding-top: 10vw;
+  padding-bottom: 6vw;
+  padding-left: 12vw !important;
+  padding-right: 12vw !important;
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("https://p0.pikrepo.com/preview/174/874/cn-tower-surrounded-by-clouds.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://www.salomon.com/sites/default/files/styles/crop_image_large_standard_1920x600_/public/carousel-product/background/2018-09/background-slider_6.jpg?itok=wB5_U4iy");
 
   /* Set a specific height */
 
@@ -250,7 +277,9 @@ body, html {
   background-size: cover;
   position: relative;
 }
-
+.margin-right1{
+  margin-right: 2px;
+}
 /* ....------------------------------------------------ Nav ----------------------------------------------------------------------- ...*/
 
 .bg-light {
@@ -261,7 +290,9 @@ body, html {
 /* ....------------------------------------------------ Button ----------------------------------------------------------------------- ...*/
 
 .margin-left-button{
-
+  margin-left: -8vw;
+  margin-top: 10vw;
+  text-align: center;
 }
 .button-1:hover {
   background-color: #e7e7e7;
@@ -377,7 +408,7 @@ body, html {
 .short-line{
   margin-bottom: 5%;
   width: 40%;
-  color: white;
+  color: black;
   border-top: 1px solid white;
 }
 
@@ -391,20 +422,43 @@ body, html {
 }
 .short-line-3{
   margin-bottom: 5%;
-  width: 5vw;
+  width: 10vw;
   color: grey;
-  border-top: 3px solid grey;
+  border-top: 3px solid black;
   border-radius: 50px;
 
 }
 
 .short-line-white{
-  margin-bottom: 5%;
+  margin-bottom: 3vw;
   width: 5vw;
   color: white;
   border-top: 3px solid white;
   border-radius: 50px;
 
+}
+
+.full-width-hr{
+  color: black;
+  margin-top: 7vw;
+  margin-bottom: 7vw;
+}
+
+
+
+.img-hover-zoom {
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
 }
 /* ....------------------------------------------------ Text ----------------------------------------------------------------------- ...*/
 .new-h1-text{
@@ -413,24 +467,25 @@ body, html {
   margin-bottom: 10px;
   font-size: 20px;
   letter-spacing: 3px;
-  font-weight: 200;
+  font-weight: 300;
 }
 .text-des-under{
-  color:grey;
+  color:black;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 10px;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 3px;
-  font-weight: 200;
+  font-weight: 300;
+
 }
 
 .new-h1-text-dark{
-  color:grey;
+  color:black;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 10px;
   font-size: 20px;
   letter-spacing: 3px;
-  font-weight: 200;
+  font-weight: 400;
 }
 .nav-text{
   font-family: 'Roboto', sans-serif;
@@ -517,12 +572,9 @@ body, html {
 }
 
 .h1-text{
-  font-family: 'Roboto', sans-serif;
-  position: inline;
-  font-size: 8vw;
-  font-weight: 900;
-  margin-bottom: 20px;
-  letter-spacing: -1px;
+
+  font-size: 11vw;
+
 }
 
 .h5-text{
@@ -611,6 +663,47 @@ body, html {
 .carousel-control-next{
 
 }
+.text-center-mobile{
+  text-align: center;
+}
+.card-hover{
+
+   border-bottom: 4px solid white;
+   transition-duration: 0.4s;
+
+
+}
+.other-serviceshover:hover{
+  text-decoration: none;
+}
+.card-footer{
+  border: none;
+}
+.card-text-2{
+  color:black;
+  font-size: 12px;
+}
+.card-padding{
+  padding: 12px 25px;
+  background-color:white !important;
+
+}
+.card-body-2{
+  background-color:white !important;
+}
+.card-body-3{
+  background-color:white !important;
+}
+.card-hover:hover{
+   border-bottom: 4px solid black;
+
+}
+
+.card-titl-2{
+  color:black !important;
+  font-weight: 300;
+  font-size: 14px;
+}
 /* ....------------------------------------------------ fonts ----------------------------------------------------------------------- ...*/
 
 .font-social {
@@ -639,6 +732,9 @@ body, html {
 @media screen and (min-width: 769px) {
   .fifth-box{
     padding-top: 100px;
+  }
+  .text-center-mobile{
+    text-align: left;
   }
   .h5-text{
     font-size: 100px;
@@ -672,9 +768,89 @@ body, html {
   .margin-top-services{
     margin-top: 0px;
   }
+  .second-buttons{
+    padding-top: 2vw;
+  }
+  .h1-text{
+    font-family: 'Roboto', sans-serif;
+    position: inline;
+    font-size: 8vw;
+    font-weight: 900;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+  }
+  .service-cont{
 
+    padding-left: 6vw;
+    padding-right: 6vw;
+
+
+  }
+  .background-image-otherservices{
+    padding-left: 6vw !important;
+    padding-right: 6vw !important;
+    padding-top: 6vw !important;
+  }
+  .margin-left-button{
+    text-align: left;
+    margin-left: 0%;
+    margin-top: 0vw;
+  }
+  .short-line-3{
+    margin-bottom: 5%;
+    width: 5vw;
+    color: grey;
+    border-top: 3px solid black;
+    border-radius: 50px;
+
+  }
 }
 
-@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .service-cont{
 
+    padding-left: 12vw;
+    padding-right: 12vw;
+
+
+  }
+  .background-image-otherservices{
+    padding-left: 13vw !important;
+    padding-right: 13vw !important;
+    padding-top: 6vw !important;
+  }
+  .card-hover{
+
+  }
+  .short-line-3{
+    margin-bottom: 5%;
+    width: 5vw;
+    color: grey;
+    border-top: 3px solid black;
+    border-radius: 50px;
+
+  }
+  .margin-left-button{
+    text-align: left;
+    margin-left: 0%;
+    margin-top: 0vw;
+  }
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .text-center-mobile{
+    text-align: left;
+  }
+  .short-line-3{
+    margin-bottom: 5%;
+    width: 5vw;
+    color: grey;
+    border-top: 3px solid black;
+    border-radius: 50px;
+
+  }
+  .margin-left-button{
+    text-align: left;
+    margin-left: 0%;
+    margin-top: 0vw;
+  }
 }
