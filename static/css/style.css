@@ -37,6 +37,13 @@ html, body {
   padding-bottom: 10vw;
 
 }
+
+.contact-page{
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 10vw;
+  padding-top: 10vw;
+}
 .button-service-cont{
   background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
   padding-left: 4vw;
@@ -182,6 +189,66 @@ body {
 
 }
 
+/* ....------------------------------------------------  Form ----------------------------------------------------------------------- ...*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:black;
+  font-family: 'Roboto', sans-serif;
+  font-weight:300;
+  font-size: 12px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: #e6e6e6;
+  border:1px solid grey;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  border: none;
+  outline:0;
+}
+
+.feedback-input:focus {
+  background-color: #d0d0d0;
+}
+.contact-map{
+  width: 100%;
+}
+.map{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+
+
 /* ....------------------------------------------------  Image ----------------------------------------------------------------------- ...*/
 
 .gallery-img{
@@ -190,7 +257,9 @@ body {
   padding: 0;
   margin: 0;
 }
-
+.footer-img-2{
+  width: 100%;
+}
 .footer-img{
   width: 10vw;
   padding-bottom: 3vw;
@@ -352,6 +421,26 @@ body, html {
   font-size: 14px;
 
 }
+.button-5:hover {
+  background-color: #e7e7e7 ;
+  color: black;
+}
+
+.button-5 {
+  background-color: black;
+  color: White;
+  border: 2px solid #e7e7e7;
+  border-radius: 100px;
+  padding: 8px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+
+}
 .button-3:hover {
   background-color: #e7e7e7 ;
   color: black;
@@ -478,7 +567,24 @@ body, html {
   font-weight: 300;
 
 }
-
+.contact-p{
+  color:grey;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.contact-p-2{
+  color:grey;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
 .new-h1-text-dark{
   color:black;
   font-family: 'Roboto', sans-serif;
@@ -711,6 +817,7 @@ body, html {
   padding: 0px;
   border-radius: 0px;
   transition-duration: 0.4s;
+  vertical-align: center;
 
 }
 .font-social:hover{
@@ -719,6 +826,12 @@ body, html {
 }
 .font-awesome{
   padding-bottom: 20px;
+}
+
+.fonts-2{
+  padding-right: 20px;
+  vertical-align: center;
+  margin-top: 20px;
 }
 
 /* ....------------------------------------------------ Margin  ----------------------------------------------------------------------- ...*/
@@ -746,6 +859,9 @@ body, html {
   .p-info-text{
 
     font-size: 20px;
+  }
+  .contact-map{
+    width: 300px;
   }
   .footer-margin-mobile-top{
     margin-top: 0px;
@@ -804,6 +920,10 @@ body, html {
     border-radius: 50px;
 
   }
+  .map{
+        margin: 50px auto;
+        padding-left: 100px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -835,10 +955,25 @@ body, html {
     margin-left: 0%;
     margin-top: 0vw;
   }
+  .contact-page{
+    padding-left: 11vw;
+    padding-right: 11vw;
+    padding-bottom: 10vw;
+    padding-top: 10vw;
+  }
 }
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
   .text-center-mobile{
     text-align: left;
+  }
+  .contact-map{
+    width: 300px;
+  }
+  .contact-page{
+    padding-left: 11vw;
+    padding-right: 11vw;
+    padding-bottom: 10vw;
+    padding-top: 10vw;
   }
   .short-line-3{
     margin-bottom: 5%;
@@ -847,6 +982,10 @@ body, html {
     border-top: 3px solid black;
     border-radius: 50px;
 
+  }
+  .map{
+        margin: 50px auto;
+        padding-left: 100px;
   }
   .margin-left-button{
     text-align: left;
