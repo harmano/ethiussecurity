@@ -87,7 +87,7 @@
       </div>
       <div class="row service-cont card-deck">
         <div class="col-4 text-center">
-          <h1 class="about-text-h">1000</h1>
+          <h1 class="about-text-h" id="nbr">1000</h1>
           <p class="about-text-P">JOBS SERVED</p>
         </div>
         <div class="col-4 text-center">
@@ -95,7 +95,7 @@
           <p class="about-text-P">SINCE 2014</p>
         </div>
         <div class="col-4 text-center">
-          <h1 class="about-text-h">50+</h1>
+          <h1 class="about-text-h" id="nbr2">50</h1>
           <p class="about-text-P">STAFF</p>
         </div>
       </div>
@@ -123,7 +123,7 @@
       </div>
       <div class="row">
         <div class="col-md-3 col-sm-6 margin-top-2  text-right-2 ">
-          <img src="img/personalsecurity_img.png" class="boxshadow avatar"alt="">
+          <img src="img/profile-img.png" class="boxshadow avatar"alt="">
         </div>
         <div class="col-md-3 col-sm-6 margin-top-2">
           <p class="about-name-h">Simran Virk</p>
@@ -136,10 +136,10 @@
           </div>
 
           <hr class="text-left short-line-4">
-          <p class="about-text-p"> is the most trusted security company we've used, highly recommended,  is the most trusted security company we've used, highly recommended...</p>
+          <p class="about-text-p"> is the most trusted security company we've used, highly recommended...</p>
         </div>
         <div class="col-md-3 col-sm-6 margin-top-3  text-right-2 ">
-          <img src="img/personalsecurity_img.png" class="boxshadow avatar"alt="">
+          <img src="img/profile-img.png" class="boxshadow avatar"alt="">
         </div>
         <div class="col-md-3 col-sm-6 margin-top-2">
           <p class="about-name-h">Simran Virk</p>
@@ -151,12 +151,12 @@
             <a href="https://www.facebook.com/thesofound/"><i class="fab fa-facebook-f font-social fonts-3"></i></a>
           </div>
           <hr class="text-left short-line-4">
-          <p class="about-text-p"> is the most trusted security company we've used, highly recommended,  is the most trusted security company we've used, highly recommended...</p>
+          <p class="about-text-p"> is the most trusted security company we've used, highly recommended...</p>
         </div>
       </div>
       <div class="margin-top-avatar row">
         <div class="col-md-3 col-sm-6 margin-top-3  text-right-2 ">
-          <img src="img/personalsecurity_img.png" class="boxshadow avatar"alt="">
+          <img src="img/profile-img.png" class="boxshadow avatar"alt="">
         </div>
         <div class="col-md-3 col-sm-6 margin-top-2">
           <p class="about-name-h">Simran Virk</p>
@@ -168,10 +168,10 @@
             <a href="https://www.facebook.com/thesofound/"><i class="fab fa-facebook-f font-social fonts-3"></i></a>
           </div>
           <hr class="text-left short-line-4">
-          <p class="about-text-p"> is the most trusted security company we've used, highly recommended,  is the most trusted security company we've used, highly recommended...</p>
+          <p class="about-text-p"> is the most trusted security company we've used, highly recommended...</p>
         </div>
         <div class="col-md-3 col-sm-6 margin-top-3  text-right-2 ">
-          <img src="img/personalsecurity_img.png" class="boxshadow avatar"alt="">
+          <img src="img/profile-img.png" class="boxshadow avatar"alt="">
         </div>
         <div class="col-md-3 col-sm-6 margin-top-2">
           <p class="about-name-h">Simran Virk</p>
@@ -183,7 +183,7 @@
             <a href="https://www.facebook.com/thesofound/"><i class="fab fa-facebook-f font-social fonts-3"></i></a>
           </div>
           <hr class="text-left short-line-4">
-          <p class="about-text-p"> is the most trusted security company we've used, highly recommended,  is the most trusted security company we've used, highly recommended...</p>
+          <p class="about-text-p"> is the most trusted security company we've used, highly recommended...</p>
         </div>
       </div>
     </div>
@@ -208,9 +208,9 @@
 
    <div class="ctacontainer cta-background text-center">
      <h1 class="text-center difference-h-4">Contact us for a Quote!</h1>
-     <p class="col-12 text-center text-p">Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
+     <p class="col-12 text-center text-p-sm">Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
      <a href="contact.html"><button class="text-center button-6">G E T<i style="opacity:0;">.</i> A<i style="opacity:0;">.</i> Q U O T E</button></a>
-   </div>
+  </div>
   </body>
 
   <!-- ............................................. Footer ............................................. -->
@@ -358,6 +358,32 @@
 
   </script>
   <script>
+  var speed = 1;
+
+    /* Call this function with a string containing the ID name to
+    * the element containing the number you want to do a count animation on.*/
+    function incEltNbr(id) {
+    elt = document.getElementById(id);
+    endNbr = Number(document.getElementById(id).innerHTML);
+    incNbrRec(0, endNbr, elt);
+    }
+
+    /*A recursive function to increase the number.*/
+    function incNbrRec(i, endNbr, elt) {
+    if (i <= endNbr) {
+      elt.innerHTML = i;
+      setTimeout(function() {//Delay a bit before calling the function again.
+        incNbrRec(i + 1, endNbr, elt);
+      }, speed);
+    }
+    }
+
+    /*Function called on button click*/
+    function incNbr(){
+    incEltNbr("nbr2");
+    }
+
+    incEltNbr("nbr2"); /*Call this funtion with the ID-name for that element to increase the number within*/
 
   </script>
 </html>
