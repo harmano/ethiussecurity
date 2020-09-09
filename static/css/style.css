@@ -342,6 +342,14 @@ body, html {
   background-size: cover;
   position: relative;
 }
+.cta-background {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://raw.githubusercontent.com/harmano/ethiussecurity/master/img/gradientimg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
 /* Place text in the middle of the image */
 .hero-text {
@@ -483,12 +491,13 @@ body, html {
 .button-6:hover {
   background-color: #e7e7e7 ;
   color: black;
+  border: 2px solid #e7e7e7 !important;
 }
 
 .button-6 {
   background-color: black;
   color: White;
-  border: 2px solid #e7e7e7;
+  border: 2px solid black !important;
   border-radius: 100px;
   padding: 8px 26px;
   text-align: center;
@@ -636,13 +645,13 @@ body, html {
 
 }
 
-}
-#ctacontainer{
+
+.ctacontainer{
   background-color: #f7f7f7;
-  padding-top: 20vw;
-  padding-bottom: 20vw;
-  padding-right: 10vw;
-  padding-left: 10vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw !important;
+  padding-right: 0vw;
+  padding-left: 0vw;
 }
 
 .about-quote{
@@ -682,6 +691,13 @@ body, html {
   font-weight: 300;
   margin-bottom: 2px;
   text-align: center;
+}
+.text-p{
+  color:black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0px;
+  font-weight: 300;
 }
 .contact-text-p{
   color:black;
@@ -736,6 +752,27 @@ body, html {
   text-align: center;
   margin-bottom: 20px;
 }
+.difference-h-3{
+  color:black;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.difference-h-4{
+  color:black;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .about-text-h{
   color:white;
   font-family: 'Roboto', sans-serif;
@@ -1218,7 +1255,17 @@ body, html {
 
     padding-top: 10vw;
     padding-bottom: 10vw;
-
+  }
+  .ctacontainer{
+    background-color: #f7f7f7;
+    padding-top: 5vw;
+    padding-bottom: 5vw !important;
+    padding-right: 10vw;
+    padding-left: 10vw;
+  }
+  .difference-h-4{
+    font-size: 40px;
+  }
 
 }
 
