@@ -344,7 +344,7 @@ body, html {
 }
 .cta-background {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://raw.githubusercontent.com/harmano/ethiussecurity/master/img/gradientimg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://raw.githubusercontent.com/harmano/ethiussecurity/master/img/cta-img-2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
