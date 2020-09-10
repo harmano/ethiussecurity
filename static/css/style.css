@@ -276,9 +276,99 @@ textarea {
 [type="submit"]:hover { background:#CC4949; }
 
 
+* {
+  box-sizing: border-box;
+}
 
+
+.row3 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column3 {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column3 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column3 {
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+}
+.row2 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column2 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column2 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column2 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 /* ....------------------------------------------------  Image ----------------------------------------------------------------------- ...*/
-
+.gallery-services-img{
+  height: 50%;
+}
+.side-gallery-img{
+  width: 100%;
+}
+.side-gallery-img-mobile{
+  width: 100%;
+  margin-top: 15px;
+}
+.icon-img{
+  width: 60px;
+}
 .quote-img{
   width: 50px;
 }
@@ -324,7 +414,35 @@ textarea {
   margin-right: 2vw;
 }
 /* ....------------------------------------------------Image Grid ----------------------------------------------------------------------- ...*/
+.main-services{
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-bottom: 4vw;
+  padding-top: 4vw;
+}
 
+.middle-containter-services{
+  background-color: #f7f7f7;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-bottom: 4vw;
+  padding-top: 4vw;
+}
+.other-services-container{
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 10vw;
+  padding-top: 8vw;
+  background-color: #f7f7f7;
+}
+
+.gallery-services-container{
+  padding: 10px;
+  padding-right: 20px;
+}
+.gallery-right-services-container{
+
+}
 .container-gallery{
   padding-left: 10vw;
   padding-right: 10vw;
@@ -438,6 +556,25 @@ body, html {
   margin-left: -8vw;
   margin-top: 10vw;
   text-align: center;
+}
+.button-services-2 {
+  background-color: black;
+  color: White;
+  border: 2px solid #e7e7e7;
+  border-radius: 100px;
+  padding: 8px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 8px;
+
+}
+.button-services-2:hover {
+  background-color: #e7e7e7 ;
+  color: black;
 }
 .button-1:hover {
   background-color: #e7e7e7;
@@ -629,6 +766,24 @@ body, html {
   margin-top: 9px;
 
 }
+.short-line-5{
+  width: 50px;
+  color: grey;
+  border-top: 2px solid black;
+  border-radius: 50px;
+  text-align: left;
+  float: left;
+
+}
+.short-line-5-2{
+  width: 50px;
+  color: grey;
+  border-top: 2px solid black;
+  border-radius: 50px;
+  text-align: right;
+  float: right;
+
+}
 .short-line-white{
   margin-bottom: 3vw;
   width: 5vw;
@@ -703,6 +858,32 @@ body, html {
   margin-bottom: 2px;
   text-align: center;
 }
+.other-services-h1{
+  color: black ;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 40px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.other-services-h{
+  color: #d4b857;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  margin-bottom: 2px;
+  text-align: center;
+}
+.other-services-p{
+  color:grey;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0px;
+  font-weight: 300;
+  margin-bottom: 2px;
+  text-align: center;
+}
 .about-name-p{
   color:grey;
   font-family: 'Roboto', sans-serif;
@@ -714,6 +895,48 @@ body, html {
 }
 .about-text-p{
   color:black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0px;
+  font-weight: 300;
+  margin-bottom: 2px;
+  text-align: center;
+}
+.main-services-p-2{
+  color:black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0px;
+  font-weight: 300;
+  text-align: left;
+  padding-left: 2px;
+}
+.main-services-p-right{
+
+  margin-top: -30px;
+  color:black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0px;
+  font-weight: 300;
+  margin-bottom: 8px;
+  text-align: right;
+  padding-left: 0px;
+}
+.main-services-p{
+
+  margin-top: -30px;
+  color:black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0px;
+  font-weight: 300;
+  margin-bottom: 8px;
+  text-align: left;
+  padding-right: 0px;
+}
+.about-text-p-2{
+  color:white;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
   letter-spacing: 0px;
@@ -1105,7 +1328,12 @@ body, html {
   font-size: 13px;
 }
 /* ....------------------------------------------------ Margin  ----------------------------------------------------------------------- ...*/
-
+.main-services-margin{
+  margin-top: 20px;
+}
+.margin-top-services-other{
+  margin-top: 50px;
+}
 .margin-top{
   margin-top: 8vw;
 }
@@ -1134,6 +1362,54 @@ body, html {
 
 
 @media screen and (min-width: 769px) {
+  .button-services-2 {
+    background-color: black;
+    color: White;
+    border: 2px solid #e7e7e7;
+    border-radius: 100px;
+    padding: 8px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-size: 14px;
+
+  }
+  .button-services-2:hover {
+    background-color: #e7e7e7 ;
+    color: black;
+  }
+  .main-services-p-right{
+
+    margin-top: -30px;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw;
+    text-align: right;
+    letter-spacing: 0px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-align: right;
+    padding-left: 70px;
+  }
+  .main-services-p{
+
+    margin-top: -30px;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw;
+    text-align: left;
+    letter-spacing: 0px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-align: left;
+    padding-right: 70px;
+  }
+  .icon-img{
+    width: 120px;
+  }
   .fifth-box{
     padding-top: 100px;
   }
@@ -1311,6 +1587,19 @@ body, html {
       color: white;
       margin-top: 40%;
       margin-bottom: 60%;
+  }
+  .other-services-h1{
+
+    margin-bottom: 70px;
+    font-size: 50px;
+  }
+  .other-services-h{
+
+    font-size: 20px;
+
+  }
+  .main-services-margin{
+    margin-top: 80px;
   }
 
 }
