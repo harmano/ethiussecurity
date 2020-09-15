@@ -68,6 +68,9 @@
         <a href="#"><button class="button-4">S E R V I C E S<i style="opacity:0;"></i></button></a>
       </div>
     </div>
+    <div class="col">
+      <a   href="index.html"> <img src="img/ethiusprotection_logo.png" class="nav-logo-mobile" alt=""> </a>
+    </div>
   <div id="mySidenav" class="sidenav">
       <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a class="nav-text" href="index.html">HOME <span class="sr-only">(current)</span></a>
@@ -142,6 +145,29 @@
         </div>
       </div>
     </div>
+    <script>
+      function showImages(el) {
+          var windowHeight = jQuery( window ).height();
+          $(el).each(function(){
+              var thisPos = $(this).offset().top;
+
+              var topOfWindow = $(window).scrollTop();
+              if (topOfWindow + windowHeight - 200 > thisPos ) {
+                  $(this).addClass("fadeIn");
+              }
+          });
+      }
+
+      // if the image in the window of browser when the page is loaded, show that image
+      $(document).ready(function(){
+              showImages('.star');
+      });
+
+      // if the image in the window of browser when scrolling the page, show that image
+      $(window).scroll(function() {
+              showImages('.star');
+      });
+  </script>
     <!-- ............................................. Services ............................................. -->
     <div class="flip-left background-image-otherservices">
       <div class="  text-center">
