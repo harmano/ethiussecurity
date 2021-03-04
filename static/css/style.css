@@ -357,6 +357,11 @@ textarea {
   }
 }
 /* ....------------------------------------------------  Image ----------------------------------------------------------------------- ...*/
+
+.careers-imgs{
+  width: 33%;
+  padding: 10px;
+}
 .gallery-services-img{
   height: 50%;
 }
@@ -565,6 +570,11 @@ body, html {
 
 
 /* ....------------------------------------------------ Button ----------------------------------------------------------------------- ...*/
+.careers-hover:hover {
+text-decoration: none;
+font-weight: 400;
+color: black;
+}
 .boxshadow {
   -webkit-box-shadow: 0px 0px 46px -13px rgba(0,0,0,0.21);
   -moz-box-shadow: 0px 0px 46px -13px rgba(0,0,0,0.21);
