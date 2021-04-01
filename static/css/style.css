@@ -92,6 +92,12 @@ html, body {
   padding-top: 10px !important;
   border: none;
 }
+.card2{
+  border: none;
+  border-radius: 0px;
+  border-top: 0 !important;
+  min-height: 400px;
+}
 
 .card{
   border: none;
@@ -132,7 +138,8 @@ html, body {
   background-color: black;
   padding: 0 !important;
   padding-top: 10px !important;
-  border-radius: 0px !important;;
+  border-radius: 0px !important;
+  vertical-align: bottom;
 }
 
 .about-us-description{
@@ -1400,6 +1407,12 @@ color: black;
 
 
 @media screen and (min-width: 769px) {
+  .card2{
+  border: none;
+  border-radius: 0px;
+  border-top: 0 !important;
+  min-height: 400px;
+}
   .nav-logo-mobile{
     display: none;
   }
