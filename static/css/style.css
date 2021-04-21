@@ -458,7 +458,7 @@ textarea {
   padding-right: 10vw;
   padding-bottom: 10vw;
   padding-top: 8vw;
-  background-color: #f7f7f7;
+  background-color: white;
 }
 
 .gallery-services-container{
@@ -1212,6 +1212,11 @@ color: black;
   font-size: 11vw;
 
 }
+.h1-text-home{
+
+  font-size: 11vw;
+
+}
 
 .h5-text{
   font-family: 'Roboto', sans-serif;
@@ -1235,6 +1240,13 @@ color: black;
   font-weight: 100;
   color: grey;
   letter-spacing: 3px;
+}
+.h4-text-2{
+  font-size: 12px;
+  font-weight: 100;
+  color: white;
+  letter-spacing: 3px;
+  margin-top: -7px;
 }
 .h-category-text{
 
@@ -1413,6 +1425,13 @@ color: black;
   border-top: 0 !important;
   min-height: 400px;
 }
+.h4-text-2{
+  font-size: 12px;
+  font-weight: 100;
+  color: white;
+  letter-spacing: 3px;
+  margin-top: -20px;
+}
   .nav-logo-mobile{
     display: none;
   }
@@ -1518,6 +1537,14 @@ color: black;
     font-family: 'Roboto', sans-serif;
     position: inline;
     font-size: 8vw;
+    font-weight: 900;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+  }
+  .h1-text-home{
+    font-family: 'Roboto', sans-serif;
+    position: inline;
+    font-size: 6vw;
     font-weight: 900;
     margin-bottom: 20px;
     letter-spacing: -1px;
@@ -1672,6 +1699,11 @@ color: black;
 
 
   }
+  .h1-text-home{
+
+    font-size: 6vw;
+  
+  }
   .background-image-otherservices{
     padding-left: 13vw !important;
     padding-right: 13vw !important;
@@ -1740,6 +1772,11 @@ color: black;
   }
   .contact-map{
     width: 300px;
+  }
+  .h1-text-home{
+
+    font-size: 11vw;
+  
   }
   .contact-page{
     padding-left: 11vw;
