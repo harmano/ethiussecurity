@@ -503,7 +503,7 @@ body, html {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read https://raw.githubusercontent.com/harmano/ethiussecurity/master/img/headerimg.png https://wallpapercrafter.com/desktop/222955-city-toronto-cityscape-and-skyscraper-hd.jpg */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://wallpapercrafter.com/desktop/222955-city-toronto-cityscape-and-skyscraper-hd.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/Pictures/222955-city-toronto-cityscape-and-skyscraper-hd.jpeg");
 
   /* Set a specific height */
   height: 55%;
